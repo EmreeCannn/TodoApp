@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body{
+            background-color:#c4414a;
+            
+        }
+        h1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: white;
+            font-size: 39px;
+            font-weight: bold;
+        }
+        .container,form{
+            display: grid;
+            place-items: center;
+          
+            
+        }
+        
+        .container input{
+            background-color: #a1504f;
+            border: none;
+            width: 241px;
+            padding: 12px 22px;
+            margin-left: 41px;
+            
+        }
+        input::placeholder{
+            color: white;
+        }
+        .li{
+            background-color: #f58d8c;
+            display: flex;
+            justify-content:space-between;
+            list-style-type:none;
+            padding:12px 22px;
+            color:white;
+            margin: 20px;
+            
+            
+        }
+        .container i{
+            cursor: pointer;
+            margin-left: 6.6rem;
+            color: white;
+        }
+        form>a{
+            text-decoration: none;
+            color: white;
+            margin-bottom: 20px;
+            
+        }
+        form>input{
+            background-color: #a1504f;
+            border: none;
+            width: 241px;
+            padding: 12px 22px;
+            margin-left: 41px;
+        }
+        .ul_list{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .remove{
+            display: none;
+        }
+        .line-thorug{
+            text-decoration: line-through;
+        }
+        .none{
+            display: none !important;
+            position: absolute;
+        }
+        .choosen_one{
+            border-radius: 30px;
+            
+        }
+
+        input:focus{
+            border-radius: 20px;
+            outline: none;
+            
+        }
+        .li:hover{
+            border-radius: 20px;
+            transform: scale(1.2);
+            transition: 770ms;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <div class="container">
+        <form class="header_search">
+            <input class="search" type="text" placeholder="Ara..." name="search">
+        </form>
+        <ul class="ul_list">
+            <li class="li">Yüzmeye Git
+                <i class="fa-solid fa-trash-can delete"></i>
+            </li>
+            <li class="li">Manavdan limon al
+                <i class="fa-solid fa-trash-can delete"></i>
+            </li>
+            <li class="li">Javascript çalış
+                <i class="fa-solid fa-trash-can delete"></i>
+            </li>
+        </ul>
+    </div>
+    <form class="form">
+        <a href="#">Yeni İş Ekle</a>
+        <input class="add" type="text" name="add">
+    </form>
+    <script src="java.js"></script>
+</body>
+</html>
